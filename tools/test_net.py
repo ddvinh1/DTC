@@ -238,7 +238,7 @@ def process(video_id):
                 break
     if white_tray is None:
         white_tray = [500, 250, 1370, 920]
-        mask_frame = crop(cv2.imread(os.path.join(frame_path, 'img_0001.jpg')), white_tray)
+        mask_frame = crop(cv2.imread(os.path.join(frame_path, 'img_000001.jpg')), white_tray)
     # 找不到间隔50帧再重新遍历？
     end_time = time.time()
     print('Find time:', end_time - start_time)
