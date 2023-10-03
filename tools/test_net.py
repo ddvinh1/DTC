@@ -188,7 +188,7 @@ def track(scores):
 args = parse_args()
 # pretrain detector
 pretrain_config_file = 'mmdetection/configs/detectors/detectors_htc_r50_1x_coco.py'
-pretrain_checkpoint_file = 'content/drive/MyDrive/checkpoints/detectors_htc_r50_1x_coco-329b1453.pth'
+pretrain_checkpoint_file = args.detector
 pretrain_detector = init_detector(pretrain_config_file, pretrain_checkpoint_file)
 # detector
 config_file = 'mmdetection/configs/detectors/detectors_cascade_rcnn_r50_1x_coco.py'
